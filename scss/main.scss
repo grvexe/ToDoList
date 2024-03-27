@@ -2,10 +2,100 @@
 
 @import './variables';
 
+
+/* body */
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+    color: $primary;
+    display: grid;
     grid-template-columns: repeat(16, 1fr);
+    background-image: $light;
 }
 
+/* container */
+.container{
+    height: 700px;
+    width: 564px;
+    background-color: $secondary;
+    border-radius: 20px;
+    grid-column: 6 / 12;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+/* rows */
+.row1, .row2, .row3 {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* row 1 -------------------------------------------- */
+
+.row1 {
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    p {
+        font-size: 48px;
+        font-weight: map-get($font-weights, bold);
+        display: inline;
+    }
+
+}
+
+/* ------------------------------------------------- */
+
+
+/* row 2 -------------------------------------------- */
+
+/* input field */ 
+#taskInput {
+    background-color: transparent;
+    border: solid 2px $accent;
+    border-radius: 20px;
+    width: 270px;
+    height: 50px;
+    font-weight: map-get($font-weights, light);
+    color: $primary;
+    padding-left: 5%;
+}
+
+/* placeholder pseudo class to target input box place holder */
+::placeholder {
+    color: $primary;
+    opacity: 0.8;
+}
+
+/* add task button */
+.add-task {
+    display: inline-block;
+    width: 78px;
+    height: 50px;
+    border: solid 2px $accent;
+    border-radius: 20px;
+    background-color: $accent;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: map-get($font-weights, bold);
+    margin-left: 5%;
+    cursor: pointer;
+}
+/* ------------------------------------------------- */
+
+/* row 3 -------------------------------------------- */
+.row3 {
+    font-weight: map-get($font-weights, regular);
+    font-size: 16px;
+    height: auto;
+
+    #taskHeading{
+        font-size: 24px;
+        font-weight: map-get($font-weights, bold);
+    }
+}
+/* ------------------------------------------------- */

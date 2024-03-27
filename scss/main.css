@@ -1,7 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* body */
 body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+  color: #FEFFFF;
+  display: grid;
   grid-template-columns: repeat(16, 1fr);
-}/*# sourceMappingURL=main.css.map */
+  background-image: linear-gradient(to right, #F9FCFF, #DEE4EA);
+}
+
+/* container */
+.container {
+  height: 700px;
+  width: 564px;
+  background-color: #162E4D;
+  border-radius: 20px;
+  grid-column: 6/12;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+/* rows */
+.row1, .row2, .row3 {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* row 1 -------------------------------------------- */
+.row1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.row1 p {
+  font-size: 48px;
+  font-weight: 700;
+  display: inline;
+}
+
+/* ------------------------------------------------- */
+/* row 2 -------------------------------------------- */
+/* input field */
+#taskInput {
+  background-color: transparent;
+  border: solid 2px #E47853;
+  border-radius: 20px;
+  width: 270px;
+  height: 50px;
+  font-weight: 300;
+  color: #FEFFFF;
+  padding-left: 5%;
+}
+
+/* placeholder pseudo class to target input box place holder */
+::placeholder {
+  color: #FEFFFF;
+  opacity: 0.8;
+}
+
+/* add task button */
+.add-task {
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  border: solid 2px #E47853;
+  border-radius: 20px;
+  background-color: #E47853;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+/* row 3 -------------------------------------------- */
+.row3 {
+  font-weight: 400;
+  font-size: 16px;
+  height: auto;
+}
+.row3 #taskHeading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------- *//*# sourceMappingURL=main.css.map */
